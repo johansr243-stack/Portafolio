@@ -1,4 +1,182 @@
-h1{
-    text-align: center;
-    
+:root {
+    --primary-color: #010411;
+    --secondary-color: #dcdddf;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 10px;
+    font-size: 1rem;
+}
+
+h1 {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-content: center;
+    text-shadow: 0px 0px 3px var(--secondary-color);
+}
+
+h2 {
+    display: flex;
+    font-size: 2rem;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.contacto{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px var(--secondary-color);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    display: flex;
+}
+
+.contacto:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.section {
+    margin: 15px;
+    font-size: 3rem;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section {
+    margin: 15px;
+    font-size: 2rem;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    text-shadow: 0px 0px 5px var(--secondary-color);
+}
+
+label {
+    width: 300px;
+    font-size: 2rem;
+    display: block;
+    margin: 15px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    justify-content: center;
+
+
+}
+
+input {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 270px;
+    transition: all 0.3s ease;
+}
+
+input, textarea {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 270px;
+    transition: all 0.3s ease;
+}
+
+select, option {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+fieldset {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 270px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+button {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 6px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 70px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid transparent;
 }
