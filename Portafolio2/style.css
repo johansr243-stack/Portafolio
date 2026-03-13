@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header > nav{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    padding: 0%;
+    display: inline-block;
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.menu_link{
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+footer{
+    padding: 20px;
+    background-color: blanchedalmond;
+    margin-top: auto;
+    text-align: center;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
