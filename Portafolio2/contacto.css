@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(31, 41, 134);
+    color: white;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, label{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    font-size: 1.3rem;
+    align-items: center;
+    border: 4px solid white;
+
+}
+
+h1 {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    justify-content: center;
+    text-shadow: 0px 0px 3px var(--secondary-color);
+}
+
+h2 {
+    display: flex;
+    font-size: 2rem;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    font-size: 1.5rem;
+    margin: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+header{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    border: 6px solid white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    font-size: 1.3rem;
+    align-items: center;
+    border: 6px solid white;
+}
+
+.contacto{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px var(--secondary-color);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    display: flex;
+}
+
+.contacto:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.section {
+    margin: 15px;
+    font-size: 3rem;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section {
+    margin: 15px;
+    font-size: 2rem;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    text-shadow: 0px 0px 5px var(--secondary-color);
+}
+
+label {
+    width: 300px;
+    font-size: 2rem;
+    display: block;
+    margin: 15px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    justify-content: center;
+
+
+}
+
+input {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-bottom: 2px solid var(--secondary-color);
+    width: 270px;
+    transition: all 0.3s ease;
+}
+
+input, textarea {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px white;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 270px;
+    transition: all 0.3s ease;
+}
+
+select, option {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100px;
+    transition: all 0.3s ease;
+}
+
+fieldset {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 3px solid white;
+    border-bottom: 2px solid white;
+    width: 270px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+button {
+    display: block;
+    font-size: 1.5rem;
+    padding: 8px;
+    margin: 6px;
+    box-shadow: 0px 0px 5px white;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 70px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
