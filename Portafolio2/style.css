@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    flex-wrap: wrap;
 }
 
 header > nav{
@@ -20,28 +21,49 @@ header > nav{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(31, 41, 134);
+    flex-wrap: wrap;
 }
 
 header > div{
     margin: 20px;
     text-align: center;
-    align-items: center;    
+    align-items: center;
+    flex-wrap: wrap;    
 }
 
-.menu{
-    margin: 10px;
-    flex-direction: row;
-    justify-content: start;
+.init1{
+    font-weight: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu1{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    color: white;
 }
 
 .list_menu{
     font-style: italic;
     font-weight: bold;
-    justify-content: center;
     font-size: 1.5rem;
     margin: 10px;
+    padding: 10px;
     gap: 10px;
     text-decoration: none;
+    display: inline-block;
+    justify-content: space-between;
+    border: 3px solid rgb(31, 41, 134);
+    background-color: rgb(31, 41, 134);
+    border-radius: 7px;
+}
+
+.menu_link1{
+    text-decoration: none;
+    color: white;
 }
 
 main{
@@ -63,6 +85,7 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
+    text-decoration: none;
 }
 
 
@@ -73,10 +96,6 @@ p{
     font-size: 1.5rem;
     justify-content: space-between;
     text-align: justify;
-}
-
-h1{
-    text-align: center;
 }
 
 .logo{
@@ -93,6 +112,7 @@ h1{
     list-style: none;
     gap: 20px;
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .menu_link{
@@ -111,6 +131,41 @@ footer{
     list-style: none;
     font-size: 1.5rem;
 }
+
+@media (max-width: 600px){
+    .menu_link{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        width: 70px;
+    height: 70px;
+    }
+
+    .menu_list{
+        font-size: 1.5rem;
+    }
+
+    .p{
+        font-size: 1rem;
+    }
+
+    .list_menu{
+        font-size: 1rem;
+        margin: 8px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .temas{
+        font-size: 1rem;
+    }
+
+    .footer{
+        font-size: 1rem;
+    }
+}
+
 
 
 
