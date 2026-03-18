@@ -26,8 +26,10 @@ body{
 }
 
 .forms{
+    display: block;
     background-color: black;
     flex-direction: column;
+    justify-content: center;
     border: 3px solid black;
     border-radius: 7px;
     align-items: center;
@@ -36,8 +38,10 @@ body{
 }
 
 .form1{
+    display: block;
+    justify-content: center;
     margin: 10px;
-    gap: 10px;
+    gap: 8px;
     text-decoration: none;
     text-shadow: 1px 1px 1px c;
     font-size: 1.5rem;
@@ -51,11 +55,13 @@ body{
 
 .space{
     display: block;
+    justify-content: center;
     text-align: center;
     width: 90%;
-    gap: 15px;
+    gap: 7px;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.5rem;
     color:  rgba(5, 132, 222, 0.338);
     background-color: black, 132, 222, 0.338);
@@ -75,6 +81,7 @@ body{
     background-color: black;
     margin: auto;
     margin-top: 10px;
+    padding: 5px;
     width: 90%;
     display: block;
     flex-direction: column;
@@ -109,6 +116,16 @@ button{
     height: 20px;
     border-radius: 7px;
     transition: all 0.5s ease;
+}
+
+footer{
+    color: white;
+    padding: 20px;
+    background-color: black;
+    margin-top: auto;
+    text-align: center;
+    list-style: none;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 600px){
