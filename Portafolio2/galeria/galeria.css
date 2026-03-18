@@ -68,3 +68,60 @@ img{
 
 }
 
+@media (max-width: 576px){
+    .menu_link{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        width: 70px;
+    height: 70px;
+    }
+
+    .container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 2rem 1.5rem;
+    align-items: center;
+   justify-content: center;
+}
+
+    .list_menu{
+        font-size: 1rem;
+        margin: 8px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    border-radius: 30%;
+    transform: perspective(80px) rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.img:hover{
+    box-shadow: 0px 10px 25px black;
+    filter: grayscale(0%);
+    filter: brightness(150%);
+    transform: scale3d(1.15, 1.15, 1.15);
+    border-radius: 30%;
+
+}
+
+    .footer{
+        font-size: 1rem;
+    }
+}
