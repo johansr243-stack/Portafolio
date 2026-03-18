@@ -1,56 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contacto.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
 
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img
+            class="logo"
+            src="./imagenes/connectdevelop-brands-solid-full.svg"
+            alt="logo"
+          />
+        </div>
 
+        <ul class="menu_list">
+          <li>
+            <a href="./index.html" class="menu_link">HOME</a>
+          </li>
 
-<body>
+          <li>
+            <a href="./contacto.html" class="menu_link" target="_blank"
+              >CONTACTO</a
+            >
+          </li>
 
-    <header class="contacto">Contacto</header>
-    
-     <section class="forms">
+          <li>
+            <a href="./galeria.html" class="menu_link" target="_blank"
+              >GALERIA</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="forms">
         <label class="form1" for="Formulario">
-
-            <input class="space" type="text" id="Nombre" placeholder="Nombre">
-            <input class="space" type="text" placeholder="Apellido">
-            <input class="space" type="email" placeholder="ejemplo@gmail.com">
-            <input class="space" type="number" placeholder="Número de teléfono">
-            <input class="space" type="text" placeholder="País">
-            <input class="space" type="text" placeholder="Ciudad">
-
+          <input class="space" type="text" id="Nombre" placeholder="Nombre" />
+          <input class="space" type="text" placeholder="Apellido" />
+          <input class="space" type="email" placeholder="ejemplo@gmail.com" />
+          <input class="space" type="number" placeholder="Número de teléfono" />
+          <input class="space" type="text" placeholder="País" />
+          <input class="space" type="text" placeholder="Ciudad" />
         </label>
+      </section>
 
-        <fieldset class="ofert">
-            <legend>Oferta Laboral</legend>
-            <input type="text" placeholder="Vacante">
-            <textarea placeholder="Descripción de la oferta de trabajo"></textarea>
-            <input type="text" placeholder="Experiencia laboral requerida">
+      <section class="ofert">
+        <fieldset class="ingles">
+          <legend class="ingles_requerido">Ingles</legend>
+          <select class="form-control" name="Ingles" id="Ingles">
+            Ingles
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+          </select>
 
-            <fieldset class="ingles">
-                <legend>Nivel de ingles requerido</legend>
-                <select class="form-control" name="Ingles" id="Ingles">Ingles
-                    <option value="A1">A1</option>
-                    <option value="A2">A2</option>
-                    <option value="B1">B1</option>
-                    <OPtion value="B2"> B2</OPtion>
-                </select>
-            </fieldset>
-
-            <button type="submit">Enviar</button>
-
+          <button type="submit">Enviar</button>
         </fieldset>
+      </section>
+    </main>
 
-
-    </section>
-
-</body>
-
+    <footer>
+      <li>Derechos reservados BIT</li>
+    </footer>
+  </body>
 </html>

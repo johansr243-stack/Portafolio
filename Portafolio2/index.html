@@ -1,114 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-
-        <nav>
-            <div>
-                <img class="logo" src="./imagenes/connectdevelop-brands-solid-full.svg" alt="logo">
-            </div>
-
-            <ul class="menu_list">
-                <li>
-                    <a href="./index.html" class="menu_link">HOME</a>
-                </li>
-
-                <li> <a href="./contacto.html"
-                        class="menu_link" target="_blank">CONTACTO</a>
-                </li>
-
-                <li> <a href="./galeria.html" class="menu_link" target="_blank">GALERIA</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div class="titulo">
-            <h1 class="titulo">
-                Conceptos HTML & CSS
-
-                <p class="int1">Los primeros pasos en HTML & CSS son fundamentales ya que presentan la estructura con la que empezamos a escribir codigo que permite desarrollar paginas web interactivas, a continuación presentamos los primeros temas vistos y sus definiciones.</p>
-            </h1>
-
+      <nav>
+        <div>
+          <img
+            class="logo"
+            src="./imagenes/connectdevelop-brands-solid-full.svg"
+            alt="logo"
+          />
         </div>
 
-        <ul class="menu1">
-            <li class="list_menu" > <a href="#box1" class="menu_link1">BOX MODEL</a></li>
-            <li class="list_menu"> <a href="#box2" class="menu_link1">DISPLAY</a></li>
-            <li class="list_menu"> <a href="#box3" class="menu_link1">FLEX BOX</a></li>
-            <li class="list_menu"> <a href="#box4" class="menu_link1">MEASUREMENTS</a></li>
-            <li class="list_menu"> <a href="#box5" class="menu_link1">SELECTORS</a></li> 
-            <li class="list_menu"> <a href="#box6" class="menu_link1">FORMS</a></li>   
+        <ul class="menu_list">
+          <li>
+            <a href="./index.html" class="menu_link">INICIO</a>
+          </li>
+
+          <li>
+            <a href="./contacto.html" class="menu_link" target="_blank"
+              >CONTACTO</a
+            >
+          </li>
+
+          <li>
+            <a href="./galeria.html" class="menu_link" target="_blank"
+              >GALERIA</a
+            >
+          </li>
         </ul>
+      </nav>
 
+      <div class="titulo">
+        <h1 class="titulo">
+          Conceptos HTML & CSS
 
+          <p class="int1">
+            Los primeros pasos en HTML & CSS son fundamentales ya que presentan
+            la estructura con la que empezamos a escribir codigo que permite
+            desarrollar paginas web interactivas, a continuación presentamos los
+            primeros temas vistos y sus definiciones.
+          </p>
+        </h1>
+      </div>
+
+      <ul class="menu1">
+        <li class="list_menu">
+          <a href="#box1" class="menu_link1">BOX MODEL</a>
+        </li>
+        <li class="list_menu">
+          <a href="#box2" class="menu_link1">DISPLAY</a>
+        </li>
+        <li class="list_menu">
+          <a href="#box3" class="menu_link1">FLEX BOX</a>
+        </li>
+        <li class="list_menu">
+          <a href="#box4" class="menu_link1">MEASUREMENTS</a>
+        </li>
+        <li class="list_menu">
+          <a href="#box5" class="menu_link1">SELECTORS</a>
+        </li>
+        <li class="list_menu"><a href="#box6" class="menu_link1">FORMS</a></li>
+      </ul>
     </header>
 
     <main>
+      <div class="temas">
+        <h1 id="box1">Box Model</h1>
+        <p class="text1">
+          Determina cómo se calcula el tamaño total de un elemento y cómo
+          interactúa con los demás. Básicamente, considera que cada etiqueta
+          HTML es una caja invisible con cuatro capas: Content (el contenido),
+          Padding (espacio interno), Border (el borde) y Margin (espacio
+          externo).
+        </p>
+        <h2>Un detalle curioso</h2>
+        <p class="text1">
+          Por defecto, CSS tiene una forma "traicionera" de sumar tamaños. Si
+          defines una caja de 300px de ancho y le añades 20px de padding, ¡la
+          caja medirá 340px en total! Para evitar este dolor de cabeza y que las
+          medidas sean exactas, los desarrolladores usamos este "truco"
+          universal al principio de cada archivo CSS: box-sizing: border-box;.
+          Esto hace que el padding y el borde se queden dentro del ancho que tú
+          definiste
+        </p>
+      </div>
 
+      <div class="temas">
+        <h1 id="box2">Display</h1>
+        <p class="text1">
+          Define el espacio a ocupar de los elementos dentro de una caja.
+        </p>
 
-        <div class="temas">
-            <h1 id="box1">Box Model</h1>
-            <p>Es el modelo de la caja donde se representa el tamaño y espacio de los elementos.</p>
-        </div>  
+        <h2>Un detalle curioso</h2>
 
-        <div class="temas">
-            <h1 id="box2">Display</h1>
-            <p>Define el espacio a ocupar de los elementos dentro de una caja.
+        <p class="text1">
+          Cada elemento HTML tiene un valor de display por defecto. Por ejemplo,
+          un div siempre es block y un span siempre es inline. Con esta
+          propiedad, tú tienes el poder de romper esas reglas naturales.
+        </p>
+      </div>
 
-                <h2>¿Cómo se usa?</h2>
+      <div class="temas">
+        <h1 id="box3">Flex Box</h1>
+        <p class="text1">
+          Es la dirección en la que se ubican los elementos dentro de una caja.
+        </p>
 
-Es muy sencillo. Solo tienes que aplicarlo a la clase o etiqueta que quieras modificar en tu archivo CSS.
+        <h2>Un detalle curioso</h2>
+        <p class="text1">
+          A diferencia de otros métodos, Flexbox tiene el concepto de Ejes. El
+          Main Axis (Eje principal): Por defecto es horizontal (fila). El Cross
+          Axis (Eje cruzado): Por defecto es vertical. Lo "loco" es que si
+          cambias la dirección a columna (flex-direction: column), ¡los ejes se
+          intercambian! Lo que antes alineaba horizontalmente, ahora lo hará
+          verticalmente. Es como girar el mando de una televisión; las reglas
+          siguen siendo las mismas, pero la orientación cambia.
+        </p>
+      </div>
 
-<h2>Un detalle curioso</h2>
+      <div class="temas">
+        <h1 id="box4">Measurements</h1>
+        <p class="text1">
+          Son las propiedades de valor que le damos de acuerdo al tamaño que se
+          quiere aplicar al elemento.
+        </p>
+        <h2>Un detalle curioso</h2>
+        <p class="text1">
+          Mucha gente se confunde entre em y rem. La r de rem viene de "Root"
+          (raíz). Siempre vale lo mismo en toda la página (usualmente 16px). em,
+          en cambio, es "hereditario". Si pones 2em a un texto dentro de una
+          caja que ya tiene 2em, el texto se hace gigante porque se multiplica
+          por su padre. Tip de pro: Usa siempre rem para fuentes. Así, si un
+          usuario aumenta el tamaño de letra en su navegador por accesibilidad,
+          tu web se adaptará perfectamente sin romperse.
+        </p>
+      </div>
 
-Cada elemento HTML tiene un valor de display por defecto. Por ejemplo, un div siempre es block y un span siempre es inline. Con esta propiedad, tú tienes el poder de romper esas reglas naturales.
-                
-                
-            </p>
-        </div>
+      <div class="temas">
+        <h1 id="box5">Selectors</h1>
+        <p class="text1">
+          Son las etiquetas que llaman los elementos que queremos aplicar en
+          CSS.
+        </p>
+        <h2>Un detalle curioso</h2>
+        <p class="text1">
+          ¿Qué pasa si a un mismo botón le dices que sea rojo por su etiqueta,
+          pero verde por su clase? CSS tiene un sistema de puntos para decidir
+          quién gana. Imagina que es un sistema de rangos: ID (#): Es el General
+          (vale 100 puntos). Clase (.): Es el Sargento (vale 10 puntos).
+          Etiqueta: Es el Soldado (vale 1 punto). Si hay conflicto, el General
+          siempre gana al Sargento, y el Sargento al Soldado. Por eso, aunque
+          escribas el color de la etiqueta al final del archivo, si hay una
+          clase que dice lo contrario, la clase ganará por "rango".
+        </p>
+      </div>
 
-        <div class="temas">
-            <h1 id="box3">Flex Box</h1>
-            <p>Es la dirección en la que se ubican los elementos dentro de una caja.</p>
-        </div>
-
-        <div class="temas">
-            <h1 id="box4">Measurements</h1>
-            <p>Son las propiedades de valor que le damos de acuerdo al tamaño que se quiere aplicar al elemento.</p>
-        </div>
-
-        <div class="temas">
-            <h1 id="box5"> Selectors</h1>
-            <p>Son las etiquetas que llaman los elementos que queremos aplicar en CSS.</p>
-        </div>
-
-        <div class="temas">
-            <h1 id="box6">Forms</h1>
-            <p>Espacios de campo donde se insertas datos para obtener información sobres los usuarios.</p>
-        </div>
-
-
+      <div class="temas">
+        <h1 id="box6">Forms</h1>    
+        <p class="text1">
+          Espacios de campo donde se insertas datos para obtener información
+          sobres los usuarios.
+        </p>
+        <h2>Un detalle curioso</h2>
+        <p class="text1">
+          Existe una "conexión invisible" vital para la accesibilidad: el
+          atributo for del label debe ser igual al id del input. Si haces esto
+          bien, cuando el usuario haga clic en el texto de la etiqueta, el
+          cursor saltará automáticamente al campo de entrada. Esto es
+          fundamental para personas que usan lectores de pantalla o simplemente
+          para mejorar la experiencia en móviles, donde los dedos necesitan
+          objetivos más grandes para tocar.
+        </p>
+      </div>
     </main>
 
     <footer>
-
-        <li>Derechos reservados BIT</li>
-
-
+      <li>Derechos reservados BIT</li>
     </footer>
-
-</body>
-
+  </body>
 </html>
