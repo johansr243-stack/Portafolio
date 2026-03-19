@@ -16,6 +16,7 @@ body{
 }
 
 header > nav{
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     padding: 20px 40px;
     justify-content: space-between;
@@ -32,6 +33,50 @@ header > div{
     flex-wrap: wrap;    
 }
 
+.subtittle2{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 0px 2px black;
+}
+
+.gallery{
+    margin: auto;
+    margin-top: 230px;
+    border: 2px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: transparent;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.button{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 10px 25px black;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+}
+
+.buttonx{
+    width: 80px;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 10px 25px black;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .container{
     display: flex;
     gap: 20px;
@@ -41,7 +86,7 @@ header > div{
    justify-content: center;
 }
 
-.img{
+.img1{
     width: 200px;
     height: 200px;
     border: 2px solid black;
@@ -59,7 +104,7 @@ img{
     object-fit: cover;
 }
 
-.img:hover{
+.img1:hover{
     box-shadow: 0px 10px 25px black;
     filter: grayscale(0%);
     filter: brightness(150%);
@@ -69,6 +114,8 @@ img{
 }
 
 @media (max-width: 576px){
+
+
     .menu_link{
         font-size: 1.5rem;
     }
@@ -94,9 +141,68 @@ img{
         gap: 8px;
     }
 
+    .img1{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    border-radius: 30%;
+    transform: perspective(80px) rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+    object-fit: cover;
+    
+}
+
+.imag2{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.img1:hover{
+    box-shadow: 0px 10px 25px black;
+    filter: grayscale(0%);
+    filter: brightness(150%);
+    transform: scale3d(1.15, 1.15, 1.15);
+    border-radius: 30%;
+
+}
+
+    .footer{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .menu_link{
+        font-size: 2rem;
+    }
+
+    .logo{
+        width: 80px;
+    height: 80px;
+    }
+
+    .container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 2rem 1.5rem;
+    align-items: center;
+   justify-content: center;
+}
+
+    .list_menu{
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+    }
+
     .img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 2px solid black;
     overflow: hidden;
     transition: 0.5s;
@@ -107,8 +213,8 @@ img{
 }
 
 img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -122,6 +228,6 @@ img{
 }
 
     .footer{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
