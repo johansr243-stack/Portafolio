@@ -176,12 +176,12 @@ img{
 
 @media (max-width: 768px){
     .menu_link{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .logo{
-        width: 80px;
-    height: 80px;
+        width: 70px;
+    height: 70px;
     }
 
     .container{
@@ -228,6 +228,6 @@ img{
 }
 
     .footer{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
