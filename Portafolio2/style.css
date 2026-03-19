@@ -36,6 +36,90 @@ h1{
     text-align: center;
 }
 
+.button1{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+}
+
+.Registro{
+    margin: auto;
+    width: 900px;
+    height: 700px;
+    background: #000000;
+background: linear-gradient(0deg,rgb(19, 18, 18) 0%, rgb(40, 2, 2) 55%, rgb(156, 3, 3) 100%);
+position: relative;
+}
+
+.head_menu{
+    display: flex;
+    margin: auto;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.logoN{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main{
+    margin: auto;
+    color: white;
+    text-align: justify;
+    font-size: 2.5rem;
+}
+
+.main2{
+    color: white;
+    font-size: 1.6rem;
+    margin: auto;
+}
+
+.regist{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+    border: none;
+    width: 460px;
+    height: 40px;
+    text-align: start;
+    padding: 10px
+}
+
+.main3{
+    justify-content: start;
+    text-align: start;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main4{
+    color: white;
+    font-size: 1rem;
+    margin: 20px;
+    
+}
+
+.buttonC{
+    margin: auto;
+    width: 460px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+
+}
+
 .int1{
     margin: 10px;
     text-align: justify;

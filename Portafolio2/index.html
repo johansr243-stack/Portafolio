@@ -31,11 +31,25 @@
 
           <li>
             <a href="./galeria.html" class="menu_link" target="_blank"
-              >GALERIA</a
-            >
+              >GALERIA</a>
           </li>
+          <li><button class="button1" command="show-modal" commandfor="Registro">Registro</button></li>
         </ul>
-      </nav>
+
+          </nav>
+          <dialog class="Registro" id="Registro">
+            <div class="head_menu">
+              <img class="logoN" src="./imagenes/red-large-netflix-logo-text-701751694792625tjldcsq74b-removebg-preview.png" alt="Netflix">
+                <h2 class="main">Ingresa tu información para iniciar sesión</h2>
+                <p class="main2">O bien comienza con una nueva cuenta</p>
+                <input class="regist" type="text" id="email" placeholder="ejemplo@gmail.com"/>
+                <button class="buttonC">Continuar</button>
+                <h3 class="main3">Obtener ayuda</h3>
+                <p class="main4">Esta pagina esta protegida por Google reCAPTCHA para comprobar que no eres un robot </p>
+                <button class="buttonX" commandfor="Registro" command="close">X</button>
+                </div>
+              </dialog>
+            
 
       <div class="titulo">
         <h1 class="titulo">
