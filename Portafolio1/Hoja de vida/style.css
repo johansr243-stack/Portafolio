@@ -13,7 +13,9 @@ html {
     box-sizing: border-box;
 }
 
-
+body {
+    background-color: var(--primary-color);
+}
 
 header > nav{
     display: flex;
@@ -22,17 +24,9 @@ header > nav{
     padding: 7px;
 }
 
-body {
-    background-color: black;
-    display: grid;
-    color: white;
-    min-height: 100vh;
-    flex-wrap: wrap;
-}
-
 .head_menu{
     margin: 20px;
-    padding: 20px 10%;
+    padding: 10px;
 }
 
 .logo{
@@ -49,59 +43,24 @@ body {
 
 .menu_list{
     display: flex;
-    gap: 30px;
+    gap: 15px;
     font-size: 2.5rem;
     list-style: none;
     align-items: center;
+    text-decoration: none;
+    color: white;
 }
 
 .menu_link{
     display: flex;
     text-decoration: none;
     color: white;
-    font-weight: bold;
     
 }
 
-.informacion{
-    w
+} /* Esta llave cierra cualquier cosa que haya quedado abierta arriba */
 
-}
-
-.saludo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: white; margin: 30px;
-
-}
-
-.nombre{
-    display: flex;
-    color: white;
-    margin: 30px;
-}
-
-.profesion{
-    display: flex;
-    color: #dcdddf;
-    margin: 30px;
-}
-
-.foto_perfil{
-    width: 100px;
-    height: 100px;
-    display: flex;
-}
-
-.foto{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-
-}
-
-footer{
-    
-    
+.menu_link, .menu_link a {
+    color: #dcdddf !important;
+    text-decoration: none !important;
 }
