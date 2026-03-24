@@ -18,7 +18,6 @@ html {
 header > nav{
     display: flex;
     justify-content: space-between;
-    margin: auto;
     padding: 7px;
 }
 
@@ -70,27 +69,35 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 100px 5%;
-    min-height: 80vh;
 }
 
 .saludo{
     color: #8c8c8c;
-    font-size: 1.2rem;
-    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom:10px;
+    text-align: center;
 }
 
 .nombre{
     font-size: 4rem;
-    margin: 10px 0; 
+    margin-bottom: 7px; 
 }
 
 .profesion{
     color: #8c8c8c;
     font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.estudios{
+    margin-bottom: 7px;
+    font-size: 1.2rem;
 }
 
 .correo{
     color: rgb(195, 54, 54);
+    margin-bottom: 7px;
+    font-size: 2rem;
 }
 
 .direccion{
@@ -140,9 +147,10 @@ body {
 
 .info_me li {
   border-bottom: 1px solid #222; 
-  padding: 10px 0;
+  padding: 15px 2%;
   font-size: 16px;
   color: #d1d1d1;
+  background-color: #232222;
 }
 
 .about_image {
@@ -217,8 +225,65 @@ body {
     color: gray;
 }
 
+.Card_habilidades {
+  background-color: #0b0d17;
+  padding: 60px 10%;
+  text-align: center;
+}
 
+.habilidades {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: white;
+}
 
+.menu_habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px; 
+  list-style: none;
+  padding: 0;
+}
+
+.menu_habilidades li {
+  background-color: #161922; 
+  border: 2px solid #222;    
+  border-radius: 8px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu_habilidades li {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu_habilidades li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 50%; /* Aquí puedes variar el % según tu habilidad */
+  background-color: #E1306C;
+  box-shadow: 0 0 10px #E1306C;
+}
+
+.menu_habilidades li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  background-color: #E1306C;
+  box-shadow: 0 0 10px #E1306C;           
+}
 
 footer{
     
