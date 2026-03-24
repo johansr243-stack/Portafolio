@@ -68,14 +68,14 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: rgba(5, 132, 222, 0.338);
+    color: black;
     background-color: black, 132, 222, 0.338);
     border-radius: 7px;
 }
 
 .space:hover {
     display: block;
-    color: white;
+    color: black;
     background-color: black, 132, 222, 0.338);
     padding: 5px;
     transition: all 0.5s ease;
@@ -105,7 +105,7 @@ body {
     align-items: center;
     color: white;
     gap: 30px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-attachment: fixed;
     background-color: black;
     border-radius: 7px;
@@ -119,8 +119,9 @@ button {
     background-color: black;
     width: 100px;
     height: 20px;
+    font-size: 1.5rem;
     border-radius: 7px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease;      
 }
 
 footer {
@@ -135,13 +136,13 @@ footer {
 
 @media (max-width: 576px) {
     .contacto {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .subtittle {
         color: white;
         text-align: center;
-        font-size: 2rem;
+        font-size: .5rem;
         margin: auto;
         margin-bottom: 15px;
     }
@@ -152,7 +153,7 @@ footer {
     }
 
     .forms {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: auto;
         margin-bottom: 10px;
     }
@@ -164,7 +165,7 @@ footer {
     }
 
     .space {
-        font-size: 1.5rem;
+        font-size: 1rem;
         gap: 7px;
         margin: auto;
         margin-top: 10px;
@@ -173,7 +174,7 @@ footer {
     }
 
     .ofert {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin: auto;
     }
 
