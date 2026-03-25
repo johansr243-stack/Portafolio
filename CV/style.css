@@ -19,10 +19,11 @@ header > nav{
     display: flex;
     justify-content: space-between;
     padding: 7px;
+    border: 2px solid white;
 }
 
 body {
-    background-color: black;
+    background-color: #121836;
     display: grid;
     color: white;
     min-height: 100vh;
@@ -37,14 +38,15 @@ body {
 .logo{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 180px;
     height: 100px;
 
 }
 
 .logo_img{
-    width: 120px;
-    height: 70px;
+    width: 180px;
+    height: 90px;
     object-fit: cover;
 }
 
@@ -69,6 +71,8 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 100px 5%;
+    border: 2px solid white;
+    margin: 10px;
 }
 
 .saludo{
@@ -114,9 +118,11 @@ body {
   display: flex;
   gap: 50px;
   padding: 100px 10%;
-  background-color: #0b0d17;
+  background-color: #121528;
   justify-content: space-between;
   align-items: flex-start;
+  border: 2px solid white;
+  margin: 10px;
 }
 
 .info_container{
@@ -125,7 +131,6 @@ body {
 
 .about_section h4 {
   color: rgb(195, 54, 54); 
-  
   font-size: 14px;
   margin-bottom: 10px;
   text-align: center;
@@ -187,7 +192,7 @@ body {
 
 .button_ri:hover{
     background-color: #E1306C;
-    color: white;
+    color: gray;
 }
 
 .button_rf{
@@ -210,8 +215,8 @@ body {
 
 .button_rg{
     background-color: transparent;
-    color: #F6F8FA;
-    border: 2px solid #F6F8FA;
+    color: white;
+    border: 2px solid white;
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 600;
@@ -221,14 +226,34 @@ body {
 }
 
 .button_rg:hover{
-    background-color: #F6F8FA;
-    color: gray;
+    background-color: rgb(73, 72, 72);
+    color: rgb(72, 72, 72);
+}   
+
+.link_gh{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.link_fc{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.link_in{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
 }
 
 .Card_habilidades {
   background-color: #0b0d17;
   padding: 60px 10%;
   text-align: center;
+  border: 2px solid white;
+  margin: 10px;
 }
 
 .habilidades {

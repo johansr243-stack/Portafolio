@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #010411;
+    --secondary-color: #dcdddf;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    border: 2px solid white;
+}
+
+body {
+    background-color: #121836;
+    display: grid;
+    color: white;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.head_menu{
+    margin: 10px;
+    padding: 10px 5%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+
+}
+
+.logo_img{
+    width: 180px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.menu_list{
+    display: flex;
+    gap: 30px;
+    font-size: 2.5rem;
+    list-style: none;
+    align-items: center;
+}
+
+.menu_link{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.formulario{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.formulario_contacto{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid white;
+    background-color: #161922;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.7rem;
+}
+
+.form_input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_input label{
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form_input input, .form_input textarea{
+    width: 100%;
+    padding: 12px;
+    background-color: #0b0d17;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.4rem;
+
+}
+
+.boton_form{
+  background-color: rgb(195, 54, 54);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
