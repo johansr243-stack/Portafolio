@@ -62,70 +62,68 @@ body {
   font-weight: bold;
 }
 
-.experiencia_laboral{
-    background-color: #0e1226;
-    padding: 80px 10%;
-    color: white;
+.perfil_profesional {
+  background-color: #0e1226;
+  padding: 100px 10%;
+  color: white;
 }
 
-.subtitulo_laboral{
-    color: white;
+.contenedor_perfil {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.subtitulo_perfil{
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: rgb(195, 54, 54);
 }
 
-.titulo_laboral{
+.titulo_perfil{
     font-size: 3rem;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.linea_tiempo{
-    border-left: 2px solid rgb(195, 54, 54);
-    padding-left: 30px;
-    margin-left: 20px;
-}
+.texto_perfil { flex: 2; }
 
-.item_experiencia{
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.item_experiencia::before{
-    content: "";
-    position: absolute;
-    left: -41px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(195, 54, 54);
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgb(195, 54, 54);
-}
-
-.fecha {
-  color: rgb(195, 54, 54);
-  font-weight: bold;
-  font-size: 1.7rem;
-  margin-bottom: 5px;
-}
-
-.contenido_exp h3{
-    margin: 5px 0;
-    font-size: 2rem;
-}
-
-.empresa{
-    font-size: 1.5rem;
-    display: block;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.contenido_exp p {
-  color: #d1d1d1;
-  line-height: 1.6;
+.descripcion_larga {
   font-size: 1.5rem;
+  line-height: 1.8;
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+
+.descripcion_larga strong {
+  color: rgb(195, 54, 54);
+}
+
+.stats_rapidas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1.3rem;
+}
+
+.stat_item {
+  background-color: #161922;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid rgb(195, 54, 54);
+}
+
+.numero {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(195, 54, 54);
+}
+
+.etiqueta {
+  font-size: 1.5rem;
+  color: white;
 }
 
 footer{
