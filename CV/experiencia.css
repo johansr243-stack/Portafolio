@@ -138,3 +138,71 @@ footer{
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  
+  body {
+    overflow-x: hidden; 
+  
+section, .información, .about_section, .perfil_profesional {
+    padding: 50px 5%; 
+  }
+
+ 
+  .head_menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu_list {
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+  }
+
+  
+  .información{
+    flex-direction: column-reverse; 
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .información .texto_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .nombre {
+    font-size: 2.5rem; 
+  }
+
+  .foto_perfil .foto {
+    width: 280px; 
+    margin-bottom: 30px;
+  }
+
+
+  .about_section {
+    flex-direction: column;
+  }
+
+  .info_me {
+    grid-template-columns: 1fr; 
+  }
+
+  
+  .info_container{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  
+  .titulo_seccion {
+    font-size: 28px;
+  }
+  
+  .linea_tiempo {
+    margin-left: 10px; 
+  }
+}
