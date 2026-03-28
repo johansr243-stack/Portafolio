@@ -16,8 +16,10 @@ html {
 header > nav {
   display: flex;
   justify-content: space-between;
-  padding: 7px;
+  align-items: center;
+  padding: 10px 5%;
   border: 2px solid white;
+  margin: 10px;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
   display: grid;
   color: white;
   min-height: 100vh;
-  flex-wrap: wrap;
 }
 
 .head_menu {
@@ -42,8 +43,9 @@ body {
 }
 
 .logo_img {
-  width: 180px;
-  height: 90px;
+  width: 100%;
+  height: auto;
+  max-width: 180px;
   object-fit: cover;
 }
 
@@ -53,6 +55,7 @@ body {
   font-size: 2.5rem;
   list-style: none;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu_link {
@@ -64,8 +67,10 @@ body {
 
 .perfil_profesional {
   background-color: #0e1226;
-  padding: 100px 10%;
+  padding: 100px 5%;
   color: white;
+  border: 2px solid white;
+  margin: 10px;
 }
 
 .contenedor_perfil {
@@ -74,18 +79,20 @@ body {
   align-items: center;
 }
 
-.subtitulo_perfil{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: rgb(195, 54, 54);
+.subtitulo_perfil {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(195, 54, 54);
 }
 
-.titulo_perfil{
-    font-size: 3rem;
-    margin-bottom: 10px;
+.titulo_perfil {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.texto_perfil { flex: 2; }
+.texto_perfil {
+  flex: 2;
+}
 
 .descripcion_larga {
   font-size: 1.5rem;
@@ -104,6 +111,7 @@ body {
   flex-direction: column;
   gap: 30px;
   font-size: 1.3rem;
+  width: 100%;
 }
 
 .stat_item {
@@ -126,9 +134,9 @@ body {
   color: white;
 }
 
-footer{
+footer {
   display: flex;
-  padding: 7px;
+  padding: 20px 10px;
   border: 2px solid white;
   margin: 10px;
   font-size: 1.5rem;
@@ -137,212 +145,92 @@ footer{
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
-  }
-
-  
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
+@media (max-width: 900px) {
+  .contenedor_perfil {
     flex-direction: column;
     gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
   }
 }
 
-@media (max-width: 393px) {
-  
+@media (max-width: 768px) {
   body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
+    overflow-x: hidden;
   }
 
- 
+  section, .información, .about_section, .perfil_profesional {
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header > nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .head_menu {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .menu_list {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
 
-  
-  .información{
-    flex-direction: column-reverse; 
+  .información {
+    flex-direction: column-reverse;
     text-align: center;
     padding-top: 30px;
   }
 
-  .información .texto_info{
+  .información .texto_info {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .nombre {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .foto_perfil .foto {
-    width: 280px; 
+    width: 100%;
+    max-width: 280px;
     margin-bottom: 30px;
   }
-
 
   .about_section {
     flex-direction: column;
   }
 
   .info_me {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
-  
-  .info_container{
+  .info_container {
+    display: flex;
     flex-direction: column;
     gap: 40px;
   }
 
-  
   .titulo_seccion {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
-  
+
   .linea_tiempo {
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
   .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
-  }
-
-  
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .información .texto_info{
-    display: flex;
     flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
+    gap: 10px;
   }
 
   .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
+    max-width: 250px;
   }
 }

@@ -16,8 +16,10 @@ html {
 header > nav {
   display: flex;
   justify-content: space-between;
-  padding: 7px;
+  align-items: center;
+  padding: 10px 5%;
   border: 2px solid white;
+  margin: 10px;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
   display: grid;
   color: white;
   min-height: 100vh;
-  flex-wrap: wrap;
 }
 
 .head_menu {
@@ -42,8 +43,9 @@ body {
 }
 
 .logo_img {
-  width: 180px;
-  height: 90px;
+  width: 100%;
+  height: auto;
+  max-width: 180px;
   object-fit: cover;
 }
 
@@ -62,45 +64,46 @@ body {
   font-weight: bold;
 }
 
-.experiencia_laboral{
-    background-color: #0e1226;
-    padding: 80px 10%;
-    color: white;
+.experiencia_laboral {
+  background-color: #0e1226;
+  padding: 80px 10%;
+  color: white;
+  border: 2px solid white;
+  margin: 10px;
 }
 
-.subtitulo_laboral{
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: rgb(195, 54, 54);
+.subtitulo_laboral {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: rgb(195, 54, 54);
 }
 
-.titulo_laboral{
-    font-size: 3rem;
-    margin-bottom: 50px;
+.titulo_laboral {
+  font-size: 3rem;
+  margin-bottom: 50px;
 }
 
-.linea_tiempo{
-    border-left: 2px solid rgb(195, 54, 54);
-    padding-left: 30px;
-    margin-left: 20px;
+.linea_tiempo {
+  border-left: 2px solid rgb(195, 54, 54);
+  padding-left: 30px;
+  margin-left: 20px;
 }
 
-.item_experiencia{
-    position: relative;
-    margin-bottom: 40px;
+.item_experiencia {
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.item_experiencia::before{
-    content: "";
-    position: absolute;
-    left: -41px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(195, 54, 54);
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgb(195, 54, 54);
+.item_experiencia::before {
+  content: "";
+  position: absolute;
+  left: -41px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(195, 54, 54);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(195, 54, 54);
 }
 
 .fecha {
@@ -110,16 +113,16 @@ body {
   margin-bottom: 5px;
 }
 
-.contenido_exp h3{
-    margin: 5px 0;
-    font-size: 2rem;
+.contenido_exp h3 {
+  margin: 5px 0;
+  font-size: 2rem;
 }
 
-.empresa{
-    font-size: 1.5rem;
-    display: block;
-    font-style: italic;
-    margin-bottom: 15px;
+.empresa {
+  font-size: 1.5rem;
+  display: block;
+  font-style: italic;
+  margin-bottom: 15px;
 }
 
 .contenido_exp p {
@@ -128,9 +131,9 @@ body {
   font-size: 1.5rem;
 }
 
-footer{
+footer {
   display: flex;
-  padding: 7px;
+  padding: 20px 10px;
   border: 2px solid white;
   margin: 10px;
   font-size: 1.5rem;
@@ -140,211 +143,66 @@ footer{
 }
 
 @media (max-width: 768px) {
-  
   body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
+    overflow-x: hidden;
   }
 
- 
-  .head_menu {
+  header > nav {
     flex-direction: column;
-    gap: 15px;
-  }
-  
-  .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
-  }
-
-  
-  .información{
-    flex-direction: column-reverse; 
+    gap: 20px;
     text-align: center;
-    padding-top: 30px;
   }
 
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
-  }
-}
-
-@media (max-width: 393px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
   .menu_list {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
+    font-size: 2rem;
   }
 
-  
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
+  .experiencia_laboral {
+    padding: 50px 5%;
   }
 
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
   .linea_tiempo {
-    margin-left: 10px; 
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+
+  .item_experiencia::before {
+    left: -31px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .titulo_laboral {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .subtitulo_laboral {
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
+  .menu_list {
     flex-direction: column;
     gap: 15px;
   }
-  
-  .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
-  }
 
-  
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
   .linea_tiempo {
-    margin-left: 10px; 
+    margin-left: 5px;
+  }
+
+  .item_experiencia::before {
+    left: -29px;
+  }
+
+  .fecha {
+    font-size: 1.5rem;
+  }
+
+  .contenido_exp h3 {
+    font-size: 1.8rem;
   }
 }

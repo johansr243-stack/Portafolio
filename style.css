@@ -4,7 +4,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; 
 }
 
 * {
@@ -13,25 +13,24 @@ html {
   box-sizing: border-box;
 }
 
-header > nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px;
-  border: 2px solid white;
-}
-
 body {
   background-color: #121836;
   display: grid;
   color: white;
   min-height: 100vh;
-  flex-wrap: wrap;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 5%; 
+  border: 2px solid white;
+  margin: 10px; 
 }
 
 .head_menu {
-  margin: 10px;
-  padding: 10px 5%;
-}
+  
 
 .logo {
   display: flex;
@@ -42,8 +41,9 @@ body {
 }
 
 .logo_img {
-  width: 180px;
-  height: 90px;
+  width: 100%; 
+  height: auto; 
+  max-width: 180px;
   object-fit: cover;
 }
 
@@ -53,7 +53,7 @@ body {
   font-size: 2.5rem;
   list-style: none;
   align-items: center;
-}
+  flex-wrap: wrap; 
 
 .menu_link {
   display: flex;
@@ -66,16 +66,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 100px 5%;
+  padding: 80px 5%; 
   border: 2px solid white;
   margin: 10px;
+  gap: 30px; 
 }
 
 .saludo {
   color: #8c8c8c;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .nombre {
@@ -99,6 +99,7 @@ body {
   color: rgb(195, 54, 54);
   margin-bottom: 7px;
   font-size: 2rem;
+  word-break: break-all; 
 }
 
 .direccion {
@@ -107,34 +108,37 @@ body {
 }
 
 .foto_perfil .foto {
-  width: 400px;
+  width: 100%; 
+  max-width: 400px; 
+  height: auto;
   filter: drop-shadow(0 0 20px rgba(255, 121, 87, 0.4));
 }
 
 .about_section {
   display: flex;
   gap: 50px;
-  padding: 100px 10%;
+  padding: 80px 5%;
   background-color: #121528;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; 
   border: 2px solid white;
   margin: 10px;
 }
 
 .info_container {
   flex: 1;
+  width: 100%;
 }
 
 .about_section h4 {
   color: rgb(195, 54, 54);
-  font-size: 14px;
+  font-size: 1.4rem; 
   margin-bottom: 10px;
   text-align: center;
 }
 
 .about_section h2 {
-  font-size: 36px;
+  font-size: 3.6rem; 
   margin-bottom: 30px;
   text-align: center;
 }
@@ -150,20 +154,22 @@ body {
 .info_me li {
   border-bottom: 1px solid #222;
   padding: 15px 2%;
-  font-size: 16px;
+  font-size: 1.6rem; 
   color: #d1d1d1;
   background-color: #232222;
 }
 
 .about_image {
   flex: 1;
-  max-width: 200px;
+  width: 100%;
+  max-width: 300px; 
+  justify-content: center;
 }
 
 .about_image img {
   width: 100%;
   border-radius: 8px;
-  filter: grayscale(100%); /* Efecto blanco y negro como en la foto */
+  filter: grayscale(100%);
   opacity: 0.7;
 }
 
@@ -172,33 +178,32 @@ body {
   justify-content: space-around;
   margin-top: 20px;
   list-style: none;
+  flex-wrap: wrap; 
 }
 
-.button_ri {
+.button_ri, .button_rf, .button_rg {
   background-color: transparent;
-  color: #e1306c;
-  border: 2px solid #e1306c;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
   transition: 0.3s;
   cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.button_ri {
+  color: #e1306c;
+  border: 2px solid #e1306c;
 }
 
 .button_ri:hover {
   background-color: #e1306c;
-  color: gray;
+  color: white; 
 }
 
 .button_rf {
-  background-color: transparent;
   color: #0866ff;
   border: 2px solid #0866ff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 .button_rf:hover {
@@ -207,54 +212,34 @@ body {
 }
 
 .button_rg {
-  background-color: transparent;
   color: white;
   border: 2px solid white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 .button_rg:hover {
   background-color: rgb(73, 72, 72);
-  color: rgb(72, 72, 72);
-}
+  color: white; 
 
-.link_gh {
+
+.link_gh, .link_fc, .link_in {
   font-weight: 600;
   text-decoration: none;
-  color: white;
-}
-
-.link_fc {
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-}
-
-.link_in {
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-}
-
-.Card_habilidades {
+  color: inherit; 
   background-color: #0b0d17;
-  padding: 60px 10%;
+  padding: 60px 5%;
   text-align: center;
   border: 2px solid white;
   margin: 10px;
 }
 
 .habilidades {
-  font-size: 32px;
+  font-size: 3.2rem; 
   margin-bottom: 40px;
   color: white;
 }
 
 .menu_habilidades {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
@@ -273,12 +258,9 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-
-.menu_habilidades li {
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem; 
 }
 
 .menu_habilidades li::after {
@@ -286,25 +268,15 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 4px;
-  width: 50%; /* Aquí puedes variar el % según tu habilidad */
-  background-color: #e1306c;
-  box-shadow: 0 0 10px #e1306c;
-}
-
-.menu_habilidades li::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 6px;
+  height: 6px; 
+  width: 50%; 
   background-color: #e1306c;
   box-shadow: 0 0 10px #e1306c;
 }
 
 footer {
   display: flex;
-  padding: 10px;
+  padding: 20px 10px;
   border: 2px solid white;
   margin: 10px;
   font-size: 1.5rem;
@@ -313,213 +285,51 @@ footer {
   justify-content: center;
 }
 
-
-@media (max-width: 768px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
-  }
-
-  
-  .información{
+/* Para Tablets y Pantallas medianas */
+@media screen and (max-width: 900px) {
+  .informacion {
     flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
+    padding: 50px 5%;
   }
 
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+  .saludo, .nombre, .profesion, .estudios, .correo, .direccion {
+    text-align: center; 
   }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
 
   .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
+    flex-direction: column; 
+    padding: 50px 5%;
   }
 }
 
-@media (max-width: 393px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
+/* Para Celulares */
+@media screen and (max-width: 768px) {
+  header > nav {
+    flex-direction: column;
+    gap: 20px;
   }
 
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
   .menu_list {
-    flex-wrap: wrap; 
     justify-content: center;
-    padding: 0;
-  }
-
-  
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    font-size: 2rem;
+    gap: 15px;
   }
 
   .nombre {
-    font-size: 2.5rem; 
-  }
-
-  .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
+    font-size: 3rem; 
   }
 
   .info_me {
     grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
   }
 }
 
-@media (max-width: 480px) {
-  
-  body {
-    overflow-x: hidden; 
-  
-section, .información, .about_section, .perfil_profesional {
-    padding: 50px 5%; 
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- 
-  .head_menu {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
+@media screen and (max-width: 480px) {
   .menu_list {
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 0;
+    flex-direction: column; 
   }
-
   
-  .información{
-    flex-direction: column-reverse; 
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .información .texto_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .nombre {
-    font-size: 2.5rem; 
-  }
-
   .foto_perfil .foto {
-    width: 280px; 
-    margin-bottom: 30px;
-  }
-
-
-  .about_section {
-    flex-direction: column;
-  }
-
-  .info_me {
-    grid-template-columns: 1fr; 
-  }
-
-  
-  .info_container{
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  
-  .titulo_seccion {
-    font-size: 28px;
-  }
-  
-  .linea_tiempo {
-    margin-left: 10px; 
+    max-width: 250px; 
   }
 }
